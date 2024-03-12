@@ -659,14 +659,14 @@ body.active {
 
 .promo-card:hover::after {
   clip-path: var(--clip-path-2);
-  transform: scaleY(1);
+  transform: scaleY(1.1);
 }
 
-.promo-card .card-icon svg {
+.promo-card .card-icon ion-icon {
   margin-inline: auto;
 }
 
-.promo-card:hover .card-icon path {
+.promo-card:hover .card-icon {
   fill: var(--white);
 }
 
