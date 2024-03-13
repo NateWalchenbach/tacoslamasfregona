@@ -1,0 +1,50 @@
+Tacoslamasfregona Webiste
+1. Stylistic (fun and colorful)
+2. Menu
+3. Template for Email Marketing Campaign 
+4. Uber Eats & DoorDash?
+5. Gallary of menu items
+6. Signature Dishes 
+7. Ability to order online TEMPLATE
+
+Notes: 
+- Truck is parked in one spot
+- Wants to do doordash and uber eats
+- Colorful Website. Make it fun.
+- POS starting in april
+
+PAGES: 
+1. Home
+2. Menu
+3. About / Story
+4. Contact / Reviews
+
+
+Meeting #2
+
+Version 1 Review
+
+1. No red change background to photo
+2. á to red
+3. Change header font to match logo
+4. Make header background frosted
+5. Remove triangle on hero
+6. Social Media Icons hot pink
+7. All buttons pink
+8. Add vegan and GF to bullet points
+9. Add seafood options in menu
+10. Put welcome in spanish
+11. Add town to footer
+12. Add flowers to the footer as well
+13. First Responder Discount
+
+
+Email:
+-5 names and 5 descriptions
+- Contact
+- Opening Hours
+- Social Media
+- Discount
+- Photos 
+- Price
+

@@ -1,6 +1,4 @@
-'use strict';
-
-
+"use strict";
 
 /**
  * navbar toggle
@@ -22,12 +20,6 @@ for (let i = 0; i < navbarLinks.length; i++) {
   });
 }
 
-
-
-/**
- * header sticky & back to top
- */
-
 const header = document.querySelector("[data-header]");
 const backTopBtn = document.querySelector("[data-back-top-btn]");
 
@@ -40,8 +32,6 @@ window.addEventListener("scroll", function () {
     backTopBtn.classList.remove("active");
   }
 });
-
-
 
 /**
  * search box toggle
@@ -61,8 +51,6 @@ for (let i = 0; i < searchBoxElems.length; i++) {
   });
 }
 
-
-
 /**
  * move cycle on scroll
  */
@@ -73,7 +61,6 @@ let deliveryBoyMove = -80;
 let lastScrollPos = 0;
 
 window.addEventListener("scroll", function () {
-
   let deliveryBoyTopPos = deliveryBoy.getBoundingClientRect().top;
 
   if (deliveryBoyTopPos < 500 && deliveryBoyTopPos > -250) {
@@ -88,5 +75,4 @@ window.addEventListener("scroll", function () {
     lastScrollPos = activeScrollPos;
     deliveryBoy.style.transform = `translateX(${deliveryBoyMove}px)`;
   }
-
 });

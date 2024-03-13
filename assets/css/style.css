@@ -2,10 +2,6 @@
   #style.css
 \*-----------------------------------*/
 
-/**
- * copyright 2022 codewithsadee
- */
-
 /*-----------------------------------*\
   #CUSTOM PROPERTY
 \*-----------------------------------*/
@@ -23,7 +19,7 @@
   --spanish-gray: hsl(0, 0%, 60%);
   --sonic-silver: hsl(0, 0%, 47%);
   --deep-saffron: hsl(32, 100%, 59%);
-  --dark-orange: hsl(28, 100%, 58%);
+  --hot-pink: hsla(300, 100%, 50%, 0.979);
   --desert-sand: hsl(23, 49%, 82%);
   --isabelline: hsl(38, 44%, 96%);
   --gainsboro: hsl(0, 0%, 87%);
@@ -168,7 +164,7 @@ body.active {
 }
 
 ::selection {
-  background-color: var(--deep-saffron);
+  background-color: var(--hot-pink);
   color: var(--white);
 }
 
@@ -226,7 +222,7 @@ body.active {
 }
 
 .btn {
-  background-color: var(--bg-color, var(--deep-saffron));
+  background-color: var(--bg-color, var(--hot-pink));
   color: var(--white);
   font-family: var(--ff-rubik);
   font-size: var(--fs-4);
@@ -234,6 +230,7 @@ body.active {
   height: var(--height, 45px);
   padding-inline: var(--padding-inline, 35px);
   transition: var(--transition-1);
+  border-radius: 25px;
 }
 
 .btn-hover {
@@ -378,8 +375,7 @@ body.active {
 
 .header {
   --color: var(--white);
-  --btn-color: var(--champagne-pink);
-
+  --btn-color: var(--white);
   position: absolute;
   top: 0;
   left: 0;
@@ -387,6 +383,9 @@ body.active {
   padding-block: 20px;
   border-block-end: 1px solid var(--champagne-pink_20);
   z-index: 4;
+  /* Frosted Glass Effect */
+  background-color: rgba(255, 255, 255, 0.7); /* Fallback color */
+  backdrop-filter: blur(10px); /* Blur effect */
 }
 
 .header.active {
@@ -514,7 +513,7 @@ body.active {
 }
 
 .navbar-link:is(:hover, :focus) {
-  color: var(--dark-orange);
+  color: var(--hot-pink);
 }
 
 /*-----------------------------------*\
@@ -603,7 +602,7 @@ body.active {
 }
 
 .hero-subtitle {
-  color: var(--dark-orange);
+  color: var(--champagne-pink);
   font-family: var(--ff-shadows-into-light);
   font-size: var(--fs-3);
   letter-spacing: 1px;
@@ -611,13 +610,13 @@ body.active {
 }
 
 .hero-title {
-  color: var(--champagne-pink);
+  color: var(--white);
   max-width: 12ch;
   margin-inline: auto;
 }
 
 .hero-text {
-  color: var(--desert-sand);
+  color: var(--white);
   margin-block: 15px 30px;
   max-width: 44ch;
   margin-inline: auto;
@@ -1116,7 +1115,7 @@ body.active {
 }
 
 .banner-card .btn {
-  --bg-color: var(--dark-orange);
+  --bg-color: var(--hot-pink);
   --height: 40px;
   --padding-inline: 25px;
 }
@@ -1245,31 +1244,22 @@ body.active {
   overflow: hidden;
 }
 
-.footer-top {
+/* .footer-top {
   position: relative;
-  padding-block: 120px;
+  padding-block: 200px;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: bottom;
   border-block-end: 2px solid var(--independence_30);
-}
+} */
 
-.footer-top::after {
-  content: url(../images/delivery-boy.svg);
-  position: absolute;
-  bottom: -11px;
-  left: -160px;
-  width: 160px;
-  animation: running-cycle 20s linear infinite;
-}
-
-@keyframes running-cycle {
-  0% {
-    left: -160px;
-  }
-  100% {
-    left: 100%;
-  }
+.footer-top {
+  position: relative;
+  padding-block: 200px; /* Adjusted to change the overall height of the footer-top */
+  background-repeat: no-repeat;
+  background-size: 100% 45.33%; /* This will make the image take up the bottom third */
+  background-position: bottom;
+  border-block-end: 2px solid var(--independence_30);
 }
 
 .footer-top .container {
@@ -1292,11 +1282,12 @@ body.active {
 }
 
 .social-link {
-  background-color: var(--dark-orange);
+  background-color: var(--hot-pink);
   color: var(--white);
   font-size: 1.5rem;
   padding: 10px;
   transition: var(--transition-1);
+  border-radius: 50%;
 }
 
 .social-link:is(:hover, :focus) {
@@ -1438,7 +1429,7 @@ textarea.input-field {
 
   .header-btn-group .btn {
     display: block;
-    --bg-color: var(--dark-orange);
+    --bg-color: var(--hot-pink);
   }
 }
 
