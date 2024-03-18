@@ -1568,6 +1568,11 @@ textarea.input-field {
   .food-menu-card .card-title {
     text-align: left;
   }
+  .food-menu-card .card-banner img {
+    width: 300px; /* Fixed width */
+    height: 200px; /* Fixed height */
+    object-fit: cover; /* Cover the area without distorting aspect ratio */
+  }
 
   /**
    * CTA
@@ -1892,4 +1897,12 @@ textarea.input-field {
   .footer-top .container {
     grid-template-columns: 1.4fr 1fr 1fr 1.6fr;
   }
+}
+
+.logo span {
+  display: inline; /* Ensure it remains inline */
+}
+
+.logo {
+  font-family: "Cedarville Cursive", cursive;
 }
