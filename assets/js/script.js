@@ -212,11 +212,36 @@ function generateStarRating(rating) {
   return stars;
 }
 
-function displayMenuItems() {
+// Add event listeners to filter buttons
+document.addEventListener("DOMContentLoaded", function () {
+  displayMenuItems("all"); // Display all items by default
+
+  const filterButtons = document.querySelectorAll(".filter-btn");
+  filterButtons.forEach((btn) => {
+    btn.addEventListener("click", function () {
+      // Remove the active class from all buttons
+      filterButtons.forEach((button) => {
+        button.classList.remove("active");
+      });
+
+      // Add the active class to the clicked button
+      this.classList.add("active");
+
+      const category = this.getAttribute("data-category");
+      displayMenuItems(category);
+    });
+  });
+});
+
+function displayMenuItems(filterCategory) {
   const menuListElement = document.querySelector(".food-menu-list");
   menuListElement.innerHTML = ""; // Clear existing menu items
 
-  menuItems.forEach((item) => {
+  const filteredItems = menuItems.filter((item) => {
+    return filterCategory === "all" || item.category === filterCategory;
+  });
+
+  filteredItems.forEach((item) => {
     const menuItemHtml = `
             <li>
                 <div class="food-menu-card">
@@ -246,4 +271,3 @@ function displayMenuItems() {
     menuListElement.insertAdjacentHTML("beforeend", menuItemHtml);
   });
 }
-document.addEventListener("DOMContentLoaded", displayMenuItems);

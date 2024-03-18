@@ -777,7 +777,7 @@ body.active {
   margin-block-end: 30px;
 }
 
-.fiter-list {
+.filter-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
