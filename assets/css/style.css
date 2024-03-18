@@ -692,6 +692,7 @@ body.active {
 .promo-item {
   min-width: 100%;
   scroll-snap-align: start;
+  margin: 15px;
 }
 
 /*-----------------------------------*\
@@ -1905,4 +1906,52 @@ textarea.input-field {
 
 .logo {
   font-family: "Cedarville Cursive", cursive;
+}
+
+.promo-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Adjusts content spacing inside the card */
+  width: 300px; /* Fixed width */
+  height: 500px; /* Fixed height, adjust as needed */
+  overflow: hidden; /* Ensures that excess content is not visible */
+}
+
+.card-title,
+.card-text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* For the title */
+  -webkit-line-clamp: 3; /* For the text, adjust as necessary */
+  -webkit-box-orient: vertical;
+}
+
+/* ////////////////////////////// */
+.hero-title {
+  position: relative;
+  cursor: pointer;
+  transition: color 0.5s ease;
+}
+
+.hero-title::after {
+  content: "Welcome / Hello";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  color: transparent;
+  transition: color 0.5s ease;
+  display: flex;
+  align-items: left;
+  justify-content: left;
+}
+
+.hero-title:hover {
+  color: transparent;
+}
+
+.hero-title:hover::after {
+  color: rgb(255, 255, 255);
 }
